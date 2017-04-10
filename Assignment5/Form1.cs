@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Assignment5
 {
-    public partial class Form1 : Form
+    public partial class SlotMachineForm : Form
     {
-        public Form1()
+        public SlotMachineForm()
         {
             InitializeComponent();
         }
+
     }
 }
