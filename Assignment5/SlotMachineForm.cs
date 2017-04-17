@@ -8,18 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// App name: Slot Machine	
+// Author's name: Caitlin Foster & Tom Tsiliopoulos	        Student	ID: 200311158
+// App Creation	Date: April 10th 2017  
+// App description: This application is a virtual slot machine. 
+
+
 namespace Assignment5
 {
     public partial class SlotMachineForm : Form
     {
+        //PRIVATE VARIABLES+++++++++++++++++++++++++++
+
         private int _bet = 150;
         private int _credits = 5000;
         private int _jackpot = 10500;
-
-        //toms
-
         private int winnings = 0;
 
+        //nightmare tallys
         private int _shock = 0;
         private int _zero = 0;
         private int _lock = 0;
@@ -30,11 +36,14 @@ namespace Assignment5
         private int _oogie = 0;
 
         private Random random = new Random();
+        
+        //CONSTRUCTOR++++++++++++++++++++++++++++++++++
 
         public SlotMachineForm()
         {
             InitializeComponent();
 
+            //if the player has less than 5 credits gray out the spin and change bet buttons
             if (_credits < 5)
             {
                 SpinButton.Enabled = false;
@@ -43,10 +52,12 @@ namespace Assignment5
             }
         }
 
-        //tom's
+        //PRIVATE FUNCTIONS+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        /* Check to see if the player won the jackpot */
-        private void checkJackPot()
+        /// <summary>
+        /// this functions checks to see if the player won the jackpot
+        /// </summary>
+        private void _checkJackPot()
         {
             /* compare two random values */
             var jackPotTry = this.random.Next(51) + 1;
@@ -59,16 +70,23 @@ namespace Assignment5
             }
         }
 
-        /* Utility function to check if a value falls within a range of bounds */
-        private bool checkRange(int value, int lowerBounds, int upperBounds)
+        /// <summary>
+        /// this function checks if a value falls within a range of bounds
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="lowerBounds"></param>
+        /// <param name="upperBounds"></param>
+        /// <returns></returns>
+        private bool _checkRange(int value, int lowerBounds, int upperBounds)
         {
             return (value >= lowerBounds && value <= upperBounds) ? true : false;
 
         }
 
-        /* When this function is called it determines the betLine results.
-    e.g. Bar - Orange - Banana */
-        private void Reels()
+        /// <summary>
+        /// this function determines the bet line results and sets the reels to the appropriate image
+        /// </summary>
+        private void _reels()
         {
             int[] outCome = { 0, 0, 0 };
             string picture = "";
@@ -77,42 +95,42 @@ namespace Assignment5
             {
                 outCome[spin] = this.random.Next(65) + 1;
 
-                if (checkRange(outCome[spin], 1, 27))
+                if (_checkRange(outCome[spin], 1, 27))
                 {  // 41.5% probability
                     picture = "oogie_boogie.png";
                     _oogie++;
                 }
-                else if (checkRange(outCome[spin], 28, 37))
+                else if (_checkRange(outCome[spin], 28, 37))
                 { // 15.4% probability
                     picture = "shock.png";
                     _shock++;
                 }
-                else if (checkRange(outCome[spin], 38, 46))
+                else if (_checkRange(outCome[spin], 38, 46))
                 { // 13.8% probability
                     picture = "zero.png";
                     _zero++;
                 }
-                else if (checkRange(outCome[spin], 47, 54))
+                else if (_checkRange(outCome[spin], 47, 54))
                 { // 12.3% probability
                     picture = "Lock.png";
                     _lock++;
                 }
-                else if (checkRange(outCome[spin], 55, 59))
+                else if (_checkRange(outCome[spin], 55, 59))
                 { //  7.7% probability
                     picture = "barrel.png";
                     _barrel++;
                 }
-                else if (checkRange(outCome[spin], 60, 62))
+                else if (_checkRange(outCome[spin], 60, 62))
                 { //  4.6% probability
                     picture = "jack.png";
                     _jack++;
                 }
-                else if (checkRange(outCome[spin], 63, 64))
+                else if (_checkRange(outCome[spin], 63, 64))
                 { //  3.1% probability
                     picture = "sandy_claws.png";
                     _sandyClaws++;
                 }
-                else if (checkRange(outCome[spin], 65, 65))
+                else if (_checkRange(outCome[spin], 65, 65))
                 { //  1.5% probability
                     picture = "merry_christmas.png";
                     _santa++;
@@ -133,9 +151,12 @@ namespace Assignment5
             }
         }
 
-        /* This function calculates the player's winnings, if any */
-        private void determineWinnings()
+        /// <summary>
+        /// this function calculates the players winnings if there are winnings
+        /// </summary>
+        private void _determineWinnings()
         {
+            winnings = 0;
             if (_oogie == 0)
             {
                 if (_shock == 3)
@@ -207,14 +228,14 @@ namespace Assignment5
 
         }
 
-       
+        // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++
 
         /// <summary>
         /// this method makes the bet buttons visible when pressed as long as there are enough credits
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ChangeBetButton_Click(object sender, EventArgs e)
+        private void _changeBetButton_Click(object sender, EventArgs e)
         {
             BetGroupBox.Visible = true;
 
@@ -260,7 +281,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bet5Button_Click(object sender, EventArgs e)
+        private void _bet5Button_Click(object sender, EventArgs e)
         {
             _bet = 5;
             BetLabel.Text = "5";
@@ -272,7 +293,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bet10Button_Click(object sender, EventArgs e)
+        private void _bet10Button_Click(object sender, EventArgs e)
         {
             _bet = 10;
             BetLabel.Text = "10";
@@ -284,7 +305,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bet25Button_Click(object sender, EventArgs e)
+        private void _bet25Button_Click(object sender, EventArgs e)
         {
             _bet = 25;
             BetLabel.Text = "25";
@@ -296,7 +317,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bet50Button_Click(object sender, EventArgs e)
+        private void _bet50Button_Click(object sender, EventArgs e)
         {
             _bet = 50;
             BetLabel.Text = "50";
@@ -308,7 +329,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bet100Button_Click(object sender, EventArgs e)
+        private void _bet100Button_Click(object sender, EventArgs e)
         {
             _bet = 100;
             BetLabel.Text = "100";
@@ -320,7 +341,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bet150Button_Click(object sender, EventArgs e)
+        private void _bet150Button_Click(object sender, EventArgs e)
         {
             _bet = 150;
             BetLabel.Text = "150";
@@ -332,7 +353,7 @@ namespace Assignment5
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ResetButton_Click(object sender, EventArgs e)
+        private void _resetButton_Click(object sender, EventArgs e)
         {
             //reset credits
             NumberCreditsLabel.Text = "5000";
@@ -364,19 +385,36 @@ namespace Assignment5
             winnings = 0;
         }
 
-        private void SpinButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// this method spins the reels and decreases the players credits by their bet. If they don't have enough credits to spin the player will recieve a message
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _spinButton_Click(object sender, EventArgs e)
         {
+            // if player has insuffiecent funds to spin give p;ayer message
             if (_bet > _credits)
             {
                 MessageBox.Show("You don't have enough Money to place that bet.", "Insufficient Funds");
             }
-
+            //if player has enough credits to spin, spin the reels and determine player winnings
             else if (_bet <= _credits)
             {
                 _credits -= _bet;
-                Reels();
-                determineWinnings();
+                _reels();
+                _determineWinnings();
             }
+        }
+
+        /// <summary>
+        /// this method shows the paytable of the slot machine when the playtable button is pressed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _payTableButton_Click(object sender, EventArgs e)
+        {
+            PayTableForm paytableForm = new PayTableForm();
+            paytableForm.Show();
         }
     }
 }
