@@ -65,5 +65,10 @@ namespace Assignment5
             BetLabel.Text = "150";
             BetGroupBox.Visible = false;
         }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

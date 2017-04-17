@@ -235,6 +235,7 @@
             this.ResetButton.Size = new System.Drawing.Size(53, 43);
             this.ResetButton.TabIndex = 5;
             this.ResetButton.TabStop = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // SpinButton
             // 
