@@ -33,24 +33,36 @@
             this.NumberCreditsLabel = new System.Windows.Forms.Label();
             this.CurrentBetLabel = new System.Windows.Forms.Label();
             this.BetLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BetGroupBox = new System.Windows.Forms.GroupBox();
+            this.Bet150Button = new System.Windows.Forms.PictureBox();
+            this.Bet10Button = new System.Windows.Forms.PictureBox();
+            this.Bet100Button = new System.Windows.Forms.PictureBox();
+            this.Bet50Button = new System.Windows.Forms.PictureBox();
+            this.Bet25Button = new System.Windows.Forms.PictureBox();
+            this.Bet5Button = new System.Windows.Forms.PictureBox();
+            this.ChangeBetButton = new System.Windows.Forms.PictureBox();
+            this.PayTableButton = new System.Windows.Forms.PictureBox();
             this.ResetButton = new System.Windows.Forms.PictureBox();
             this.SpinButton = new System.Windows.Forms.PictureBox();
             this.Reel3PictureBox = new System.Windows.Forms.PictureBox();
             this.Reel2PictureBox = new System.Windows.Forms.PictureBox();
             this.Reel1PictureBox = new System.Windows.Forms.PictureBox();
             this.SlotMachinePictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.BetGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet150Button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet10Button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet100Button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet50Button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet25Button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet5Button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangeBetButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PayTableButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ResetButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpinButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reel3PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reel2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reel1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SlotMachinePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // CreditsLabel
@@ -111,24 +123,102 @@
             this.BetLabel.TabIndex = 11;
             this.BetLabel.Text = "150";
             // 
-            // pictureBox2
+            // BetGroupBox
             // 
-            this.pictureBox2.Image = global::Assignment5.Properties.Resources.ChangeBetButton;
-            this.pictureBox2.Location = new System.Drawing.Point(276, 347);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(71, 42);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.BetGroupBox.BackColor = System.Drawing.Color.Black;
+            this.BetGroupBox.BackgroundImage = global::Assignment5.Properties.Resources.background;
+            this.BetGroupBox.Controls.Add(this.Bet150Button);
+            this.BetGroupBox.Controls.Add(this.Bet10Button);
+            this.BetGroupBox.Controls.Add(this.Bet100Button);
+            this.BetGroupBox.Controls.Add(this.Bet50Button);
+            this.BetGroupBox.Controls.Add(this.Bet25Button);
+            this.BetGroupBox.Controls.Add(this.Bet5Button);
+            this.BetGroupBox.Location = new System.Drawing.Point(263, 323);
+            this.BetGroupBox.Name = "BetGroupBox";
+            this.BetGroupBox.Size = new System.Drawing.Size(101, 69);
+            this.BetGroupBox.TabIndex = 19;
+            this.BetGroupBox.TabStop = false;
+            this.BetGroupBox.Visible = false;
             // 
-            // pictureBox1
+            // Bet150Button
             // 
-            this.pictureBox1.Image = global::Assignment5.Properties.Resources.PayTableButton;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 340);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 49);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.Bet150Button.Image = global::Assignment5.Properties.Resources.Bet150;
+            this.Bet150Button.Location = new System.Drawing.Point(72, 38);
+            this.Bet150Button.Name = "Bet150Button";
+            this.Bet150Button.Size = new System.Drawing.Size(25, 25);
+            this.Bet150Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bet150Button.TabIndex = 18;
+            this.Bet150Button.TabStop = false;
+            // 
+            // Bet10Button
+            // 
+            this.Bet10Button.Image = global::Assignment5.Properties.Resources.Bet10;
+            this.Bet10Button.Location = new System.Drawing.Point(41, 7);
+            this.Bet10Button.Name = "Bet10Button";
+            this.Bet10Button.Size = new System.Drawing.Size(25, 25);
+            this.Bet10Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bet10Button.TabIndex = 17;
+            this.Bet10Button.TabStop = false;
+            // 
+            // Bet100Button
+            // 
+            this.Bet100Button.Image = global::Assignment5.Properties.Resources.Bet100;
+            this.Bet100Button.Location = new System.Drawing.Point(41, 38);
+            this.Bet100Button.Name = "Bet100Button";
+            this.Bet100Button.Size = new System.Drawing.Size(25, 25);
+            this.Bet100Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bet100Button.TabIndex = 16;
+            this.Bet100Button.TabStop = false;
+            // 
+            // Bet50Button
+            // 
+            this.Bet50Button.Image = global::Assignment5.Properties.Resources.Bet50;
+            this.Bet50Button.Location = new System.Drawing.Point(6, 38);
+            this.Bet50Button.Name = "Bet50Button";
+            this.Bet50Button.Size = new System.Drawing.Size(25, 25);
+            this.Bet50Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bet50Button.TabIndex = 15;
+            this.Bet50Button.TabStop = false;
+            // 
+            // Bet25Button
+            // 
+            this.Bet25Button.Image = global::Assignment5.Properties.Resources.Bet25;
+            this.Bet25Button.Location = new System.Drawing.Point(72, 10);
+            this.Bet25Button.Name = "Bet25Button";
+            this.Bet25Button.Size = new System.Drawing.Size(25, 25);
+            this.Bet25Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bet25Button.TabIndex = 14;
+            this.Bet25Button.TabStop = false;
+            // 
+            // Bet5Button
+            // 
+            this.Bet5Button.BackColor = System.Drawing.Color.Transparent;
+            this.Bet5Button.Image = global::Assignment5.Properties.Resources.Bet5;
+            this.Bet5Button.Location = new System.Drawing.Point(6, 7);
+            this.Bet5Button.Name = "Bet5Button";
+            this.Bet5Button.Size = new System.Drawing.Size(27, 25);
+            this.Bet5Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bet5Button.TabIndex = 13;
+            this.Bet5Button.TabStop = false;
+            // 
+            // ChangeBetButton
+            // 
+            this.ChangeBetButton.Image = global::Assignment5.Properties.Resources.ChangeBetButton;
+            this.ChangeBetButton.Location = new System.Drawing.Point(186, 350);
+            this.ChangeBetButton.Name = "ChangeBetButton";
+            this.ChangeBetButton.Size = new System.Drawing.Size(71, 42);
+            this.ChangeBetButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ChangeBetButton.TabIndex = 12;
+            this.ChangeBetButton.TabStop = false;
+            // 
+            // PayTableButton
+            // 
+            this.PayTableButton.Image = global::Assignment5.Properties.Resources.PayTableButton;
+            this.PayTableButton.Location = new System.Drawing.Point(111, 343);
+            this.PayTableButton.Name = "PayTableButton";
+            this.PayTableButton.Size = new System.Drawing.Size(56, 49);
+            this.PayTableButton.TabIndex = 9;
+            this.PayTableButton.TabStop = false;
             // 
             // ResetButton
             // 
@@ -184,29 +274,19 @@
             this.SlotMachinePictureBox.Image = global::Assignment5.Properties.Resources.Slot_Machine_GUI;
             this.SlotMachinePictureBox.Location = new System.Drawing.Point(1, 1);
             this.SlotMachinePictureBox.Name = "SlotMachinePictureBox";
-            this.SlotMachinePictureBox.Size = new System.Drawing.Size(485, 418);
+            this.SlotMachinePictureBox.Size = new System.Drawing.Size(485, 401);
             this.SlotMachinePictureBox.TabIndex = 0;
             this.SlotMachinePictureBox.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Assignment5.Properties.Resources.BetMaxButton;
-            this.pictureBox3.Location = new System.Drawing.Point(198, 342);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 47);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
             // 
             // SlotMachineForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(485, 418);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(485, 400);
+            this.Controls.Add(this.BetGroupBox);
+            this.Controls.Add(this.ChangeBetButton);
             this.Controls.Add(this.BetLabel);
             this.Controls.Add(this.CurrentBetLabel);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PayTableButton);
             this.Controls.Add(this.NumberCreditsLabel);
             this.Controls.Add(this.CreditLabel);
             this.Controls.Add(this.CreditsLabel);
@@ -221,15 +301,22 @@
             this.Name = "SlotMachineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SlotMachineForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.BetGroupBox.ResumeLayout(false);
+            this.BetGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet150Button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet10Button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet100Button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet50Button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet25Button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bet5Button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangeBetButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PayTableButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ResetButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpinButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reel3PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reel2PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reel1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SlotMachinePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,11 +333,17 @@
         private System.Windows.Forms.Label CreditsLabel;
         private System.Windows.Forms.Label CreditLabel;
         private System.Windows.Forms.Label NumberCreditsLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PayTableButton;
         private System.Windows.Forms.Label CurrentBetLabel;
         private System.Windows.Forms.Label BetLabel;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ChangeBetButton;
+        private System.Windows.Forms.PictureBox Bet5Button;
+        private System.Windows.Forms.PictureBox Bet25Button;
+        private System.Windows.Forms.PictureBox Bet50Button;
+        private System.Windows.Forms.PictureBox Bet100Button;
+        private System.Windows.Forms.PictureBox Bet10Button;
+        private System.Windows.Forms.PictureBox Bet150Button;
+        private System.Windows.Forms.GroupBox BetGroupBox;
     }
 }
 

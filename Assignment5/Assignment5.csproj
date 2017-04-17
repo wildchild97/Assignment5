@@ -122,6 +122,27 @@
   <ItemGroup>
     <None Include="Resources\BetMaxButton.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bet5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bet25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bet50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bet100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bet150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bet10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

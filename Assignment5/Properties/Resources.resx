@@ -160,4 +160,25 @@
   <data name="zero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bet10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bet10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bet100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bet100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bet150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bet150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bet25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bet25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bet5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bet5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bet50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bet50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
