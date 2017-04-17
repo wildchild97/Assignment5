@@ -149,6 +149,7 @@
             this.Bet150Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Bet150Button.TabIndex = 18;
             this.Bet150Button.TabStop = false;
+            this.Bet150Button.Click += new System.EventHandler(this.Bet150Button_Click);
             // 
             // Bet10Button
             // 
@@ -159,6 +160,7 @@
             this.Bet10Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Bet10Button.TabIndex = 17;
             this.Bet10Button.TabStop = false;
+            this.Bet10Button.Click += new System.EventHandler(this.Bet10Button_Click);
             // 
             // Bet100Button
             // 
@@ -169,6 +171,7 @@
             this.Bet100Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Bet100Button.TabIndex = 16;
             this.Bet100Button.TabStop = false;
+            this.Bet100Button.Click += new System.EventHandler(this.Bet100Button_Click);
             // 
             // Bet50Button
             // 
@@ -179,6 +182,7 @@
             this.Bet50Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Bet50Button.TabIndex = 15;
             this.Bet50Button.TabStop = false;
+            this.Bet50Button.Click += new System.EventHandler(this.Bet50Button_Click);
             // 
             // Bet25Button
             // 
@@ -189,6 +193,7 @@
             this.Bet25Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Bet25Button.TabIndex = 14;
             this.Bet25Button.TabStop = false;
+            this.Bet25Button.Click += new System.EventHandler(this.Bet25Button_Click);
             // 
             // Bet5Button
             // 
@@ -200,6 +205,7 @@
             this.Bet5Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Bet5Button.TabIndex = 13;
             this.Bet5Button.TabStop = false;
+            this.Bet5Button.Click += new System.EventHandler(this.Bet5Button_Click);
             // 
             // ChangeBetButton
             // 
@@ -210,6 +216,7 @@
             this.ChangeBetButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ChangeBetButton.TabIndex = 12;
             this.ChangeBetButton.TabStop = false;
+            this.ChangeBetButton.Click += new System.EventHandler(this.ChangeBetButton_Click);
             // 
             // PayTableButton
             // 
