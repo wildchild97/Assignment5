@@ -248,6 +248,7 @@
             this.SpinButton.Size = new System.Drawing.Size(67, 39);
             this.SpinButton.TabIndex = 4;
             this.SpinButton.TabStop = false;
+            this.SpinButton.Click += new System.EventHandler(this.SpinButton_Click);
             // 
             // Reel3PictureBox
             // 
