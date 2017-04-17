@@ -48,6 +48,8 @@
             this.Reel2PictureBox = new System.Windows.Forms.PictureBox();
             this.Reel1PictureBox = new System.Windows.Forms.PictureBox();
             this.SlotMachinePictureBox = new System.Windows.Forms.PictureBox();
+            this.JackPotLabel = new System.Windows.Forms.Label();
+            this.JackpotNumberLabel = new System.Windows.Forms.Label();
             this.BetGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bet150Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bet10Button)).BeginInit();
@@ -71,7 +73,7 @@
             this.CreditsLabel.BackColor = System.Drawing.Color.Black;
             this.CreditsLabel.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreditsLabel.ForeColor = System.Drawing.Color.White;
-            this.CreditsLabel.Location = new System.Drawing.Point(51, 269);
+            this.CreditsLabel.Location = new System.Drawing.Point(190, 270);
             this.CreditsLabel.Name = "CreditsLabel";
             this.CreditsLabel.Size = new System.Drawing.Size(63, 22);
             this.CreditsLabel.TabIndex = 6;
@@ -92,7 +94,7 @@
             this.NumberCreditsLabel.BackColor = System.Drawing.Color.Black;
             this.NumberCreditsLabel.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberCreditsLabel.ForeColor = System.Drawing.Color.Purple;
-            this.NumberCreditsLabel.Location = new System.Drawing.Point(120, 269);
+            this.NumberCreditsLabel.Location = new System.Drawing.Point(260, 269);
             this.NumberCreditsLabel.Name = "NumberCreditsLabel";
             this.NumberCreditsLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.NumberCreditsLabel.Size = new System.Drawing.Size(51, 22);
@@ -105,7 +107,7 @@
             this.CurrentBetLabel.BackColor = System.Drawing.Color.Black;
             this.CurrentBetLabel.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentBetLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.CurrentBetLabel.Location = new System.Drawing.Point(307, 270);
+            this.CurrentBetLabel.Location = new System.Drawing.Point(317, 270);
             this.CurrentBetLabel.Name = "CurrentBetLabel";
             this.CurrentBetLabel.Size = new System.Drawing.Size(100, 22);
             this.CurrentBetLabel.TabIndex = 10;
@@ -117,7 +119,7 @@
             this.BetLabel.BackColor = System.Drawing.Color.Black;
             this.BetLabel.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BetLabel.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.BetLabel.Location = new System.Drawing.Point(413, 269);
+            this.BetLabel.Location = new System.Drawing.Point(415, 269);
             this.BetLabel.Name = "BetLabel";
             this.BetLabel.Size = new System.Drawing.Size(35, 22);
             this.BetLabel.TabIndex = 11;
@@ -286,10 +288,37 @@
             this.SlotMachinePictureBox.TabIndex = 0;
             this.SlotMachinePictureBox.TabStop = false;
             // 
+            // JackPotLabel
+            // 
+            this.JackPotLabel.AutoSize = true;
+            this.JackPotLabel.BackColor = System.Drawing.Color.Black;
+            this.JackPotLabel.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JackPotLabel.ForeColor = System.Drawing.Color.White;
+            this.JackPotLabel.Location = new System.Drawing.Point(48, 270);
+            this.JackPotLabel.Name = "JackPotLabel";
+            this.JackPotLabel.Size = new System.Drawing.Size(73, 22);
+            this.JackPotLabel.TabIndex = 20;
+            this.JackPotLabel.Text = "Jackpot";
+            // 
+            // JackpotNumberLabel
+            // 
+            this.JackpotNumberLabel.AutoSize = true;
+            this.JackpotNumberLabel.BackColor = System.Drawing.Color.Black;
+            this.JackpotNumberLabel.Font = new System.Drawing.Font("Matura MT Script Capitals", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JackpotNumberLabel.ForeColor = System.Drawing.Color.Purple;
+            this.JackpotNumberLabel.Location = new System.Drawing.Point(127, 270);
+            this.JackpotNumberLabel.Name = "JackpotNumberLabel";
+            this.JackpotNumberLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.JackpotNumberLabel.Size = new System.Drawing.Size(57, 22);
+            this.JackpotNumberLabel.TabIndex = 21;
+            this.JackpotNumberLabel.Text = "10500";
+            // 
             // SlotMachineForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(485, 400);
+            this.Controls.Add(this.JackpotNumberLabel);
+            this.Controls.Add(this.JackPotLabel);
             this.Controls.Add(this.BetGroupBox);
             this.Controls.Add(this.ChangeBetButton);
             this.Controls.Add(this.BetLabel);
@@ -352,6 +381,8 @@
         private System.Windows.Forms.PictureBox Bet10Button;
         private System.Windows.Forms.PictureBox Bet150Button;
         private System.Windows.Forms.GroupBox BetGroupBox;
+        private System.Windows.Forms.Label JackPotLabel;
+        private System.Windows.Forms.Label JackpotNumberLabel;
     }
 }
 
